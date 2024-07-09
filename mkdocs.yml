@@ -1,0 +1,91 @@
+site_name: ''
+
+theme: 
+  name: material
+  logo: assets/images/atlasix_logo.jpg
+  custom_dir: overrides
+  
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+  
+
+  palette:
+
+    - scheme: default
+      primary: custom
+      accent: deep orange
+      toggle: 
+        icon: material/weather-night
+        name: Switch to light mode
+
+    - scheme: slate
+      primary: blue
+      accent: deep orange
+      toggle: 
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Setup:
+    - 'Start here': setup.md
+  - Tutorials: 
+    - tutorials/index.md
+    - Blogs and Social cards:
+      - "Blogs":
+        - tutorials/blogs/basic.md
+      - "Social cards":
+        - tutorials/social/custom.md 
+
+
+  - Markdown extensions: 
+      - 'Admonitions': markdown_extensions.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://slavik89.github.io/Atlasix-mkdocs-site/
+    - icon: fontawesome/brands/twitter
+      link: https://slavik89.github.io/Atlasix-mkdocs-site/
+    - icon: fontawesome/brands/linkedin
+      link: https://slavik89.github.io/Atlasix-mkdocs-site/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: |
+  &copy; 2024 
